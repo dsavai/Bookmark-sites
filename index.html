@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Design Patterns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="fetchBookmarks()">
+
+    <div class="content">
+        <div class="header">
+            <h1>Bookmark sites</h1>
+            <form id="myForm" >
+                <input type="text" id="name" name="name" placeholder="Enter site name..." class="input" />
+                <p id="errorName" class="error"></p>
+                <input type="text" id="url" name="url" placeholder="Enter site url..."  class="input"/>
+                <p id="errorUrl" class="error"></p>
+                <p id="errorValidUrl" class="error"></p>
+                <input type="submit" name="submit" value="Submit" class="inputS" />
+            </form>
+        </div>
+        <div class="list-items">
+            <ul id="results">
+
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
